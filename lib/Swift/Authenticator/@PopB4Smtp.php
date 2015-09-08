@@ -8,9 +8,9 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/../ClassLoader.php";
-Swift_ClassLoader::load("Swift_Authenticator");
-Swift_ClassLoader::load("Swift_LogContainer");
+
+
+
 
 /**
  * Swift PopB4Smtp Authenticator
@@ -32,7 +32,7 @@ class Swift_Authenticator_PopB4Smtp implements Swift_Authenticator
     if (is_object($conn)) $this->connection = $conn;
     else
     {
-      Swift_ClassLoader::load("Swift_Authenticator_PopB4Smtp_Pop3Connection");
+
       $this->connection = new Swift_Authenticator_PopB4Smtp_Pop3Connection($conn, $port, $encryption);
     }
   }

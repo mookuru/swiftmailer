@@ -11,11 +11,11 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/ClassLoader.php";
-Swift_ClassLoader::load("Swift_Address");
-Swift_ClassLoader::load("Swift_Message_Mime");
-Swift_ClassLoader::load("Swift_Message_Image");
-Swift_ClassLoader::load("Swift_Message_Part");
+
+
+
+
+
 
 
 /**
@@ -108,7 +108,7 @@ class Swift_Message extends Swift_Message_Mime
       $this->setData($body);
       if ($charset === null)
       {
-        Swift_ClassLoader::load("Swift_Message_Encoder");
+
         if (Swift_Message_Encoder::instance()->isUTF8($body)) $this->setCharset("utf-8");
         else $this->setCharset("iso-8859-1");
       }
@@ -769,7 +769,7 @@ class Swift_Message extends Swift_Message_Mime
     }
     if ($this->getCharset() === null && !$this->numChildren())
     {
-      Swift_ClassLoader::load("Swift_Message_Encoder");
+
       if (is_string($data) && Swift_Message_Encoder::instance()->isUTF8($data))
       {
         $this->setCharset("utf-8");

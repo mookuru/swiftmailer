@@ -9,8 +9,8 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/../ClassLoader.php";
-Swift_ClassLoader::load("Swift_Message_Mime");
+
+
 
 /**
  * MIME Part body component for Swift Mailer
@@ -40,7 +40,7 @@ class Swift_Message_Part extends Swift_Message_Mime
       $this->setData($data);
       if ($charset === null)
       {
-        Swift_ClassLoader::load("Swift_Message_Encoder");
+
         if (is_string($data) && Swift_Message_Encoder::instance()->isUTF8($data)) $this->setCharset("utf-8");
         else $this->setCharset("iso-8859-1"); //The likely encoding
       }

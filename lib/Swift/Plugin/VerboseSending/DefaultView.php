@@ -10,7 +10,7 @@
  */
 
 require_once dirname(__FILE__) . "/../../ClassLoader.php";
-Swift_ClassLoader::load("Swift_Plugin_VerboseSending_AbstractView");
+
 
 /**
  * The Default View for the Verbose Sending Plugin

@@ -8,9 +8,9 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/../ClassLoader.php";
-Swift_ClassLoader::load("Swift_Events_CommandListener");
-Swift_ClassLoader::load("Swift_Events_ResponseListener");
+
+
+
 
 /**
  * Swift Bandwidth Monitor.

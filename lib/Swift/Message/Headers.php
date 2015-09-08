@@ -9,7 +9,7 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/../ClassLoader.php";
+
 
 /**
  * Contains and constructs the headers for a MIME document
@@ -117,7 +117,7 @@ class Swift_Message_Headers
       $this->lowerHeaders[$lname] =& $this->headers[$name];
     }
     $this->cached[$lname] = null;
-    Swift_ClassLoader::load("Swift_Message_Encoder");
+
     if (is_array($value))
     {
       foreach ($value as $v)
@@ -282,7 +282,7 @@ class Swift_Message_Headers
     }
     else
     {
-      Swift_ClassLoader::load("Swift_Message_Encoder");
+
       if (!$this->getCharset() && Swift_Message_Encoder::instance()->isUTF8($value)) $this->setCharset("utf-8");
       if (!isset($this->attributes[$lheader])) $this->attributes[$lheader] = array();
       if ($value !== null) $this->attributes[$lheader][$name] = (string) $value;
@@ -369,7 +369,7 @@ class Swift_Message_Headers
   public function getEncoded($name)
   {
     if (!$this->getCharset()) $this->setCharset("iso-8859-1");
-    Swift_ClassLoader::load("Swift_Message_Encoder");
+
     //I'll try as best I can to walk through this...
     
     $lname = strtolower($name);
@@ -488,7 +488,7 @@ class Swift_Message_Headers
    */
   protected function buildAttributes($header_line, $header_name)
   {
-    Swift_ClassLoader::load("Swift_Message_Encoder");
+
     $lines = explode($this->LE, $header_line);
     $used_len = strlen($lines[count($lines)-1]);
     $lines= null;

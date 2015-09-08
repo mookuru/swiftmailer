@@ -9,10 +9,10 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/Swift/ClassLoader.php";
-Swift_ClassLoader::load("Swift");
-Swift_ClassLoader::load("Swift_Connection_SMTP");
-Swift_ClassLoader::load("Swift_Connection_Sendmail");
+
+
+
+
 
 //Some constants for backwards compatibility with v2 code
 if (!defined("SWIFT_TLS")) define("SWIFT_TLS", Swift_Connection_SMTP::ENC_TLS);
@@ -107,7 +107,7 @@ class EasySwift
   {
     try {
       $this->swift = new Swift($connection, $domain, Swift::ENABLE_LOGGING);
-      Swift_ClassLoader::load("Swift_Plugin_EasySwiftResponseTracker");
+
       $this->swift->attachPlugin(new Swift_Plugin_EasySwiftResponseTracker($this), "_ResponseTracker");
     } catch (Swift_ConnectionException $e) {
       $this->failed = true;
@@ -437,7 +437,7 @@ class EasySwift
     // Foo Bar <foo@bar>
     // or: "Foo Bar" <foo@bar>
     // or: <foo@bar>
-    Swift_ClassLoader::load("Swift_Message_Encoder");
+
     if (preg_match("/^\\s*(\"?)(.*?)\\1 *<(" . Swift_Message_Encoder::CHEAP_ADDRESS_RE . ")>\\s*\$/", $string, $matches))
     {
       if (!empty($matches[2])) $name = $matches[2];

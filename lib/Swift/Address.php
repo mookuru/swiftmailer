@@ -9,8 +9,8 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/ClassLoader.php";
-Swift_ClassLoader::load("Swift_AddressContainer");
+
+
 
 /**
  * Swift_Address is just a lone e-mail address reprsented as an object

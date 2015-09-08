@@ -9,8 +9,8 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/../ClassLoader.php";
-Swift_ClassLoader::load("Swift_File");
+
+
 
 /**
  * Encodes strings in a variety of formats and detects some encoding formats
@@ -151,7 +151,7 @@ class Swift_Message_Encoder
    */
   public function base64EncodeFile(Swift_File $file, $chunk=76, $le="\r\n")
   {
-    Swift_ClassLoader::load("Swift_CacheFactory");
+
     $cache = Swift_CacheFactory::getCache();
     $chunk -= 2;
     $chunk = $this->getHcf($chunk, 4);
@@ -266,7 +266,7 @@ class Swift_Message_Encoder
    */
   public function QPEncodeFile(Swift_File $file, $chunk=76, $le="\r\n")
   {
-    Swift_ClassLoader::load("Swift_CacheFactory");
+
     $cache = Swift_CacheFactory::getCache();
     while (false !== $bytes = $file->readln())
     {
@@ -297,7 +297,7 @@ class Swift_Message_Encoder
    */
   public function encode7BitFile(Swift_File $file, $chunk=76, $le="\r\n")
   {
-    Swift_ClassLoader::load("Swift_CacheFactory");
+
     $cache = Swift_CacheFactory::getCache();
     $ret = "";
     while (false !== $bytes = $file->read(8192)) $ret .= $bytes;
@@ -325,7 +325,7 @@ class Swift_Message_Encoder
    */
   public function encode8BitFile(Swift_File $file, $chunk=76, $le="\r\n")
   {
-    Swift_ClassLoader::load("Swift_CacheFactory");
+
     $cache = Swift_CacheFactory::getCache();
     $ret = "";
     while (false !== $bytes = $file->read(8192)) $ret .= $bytes;

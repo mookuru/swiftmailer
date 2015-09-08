@@ -9,9 +9,9 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/../ClassLoader.php";
-Swift_ClassLoader::load("Swift_Events_SendListener");
-Swift_ClassLoader::load("Swift_Plugin_VerboseSending_DefaultView");
+
+
+
 
 /**
  * Verbose Sending plugin for Swift Mailer.

@@ -8,9 +8,9 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/../ClassLoader.php";
-Swift_ClassLoader::load("Swift_ConnectionBase");
-Swift_ClassLoader::load("Swift_Authenticator");
+
+
+
 
 /**
  * Swift SMTP Connection

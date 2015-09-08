@@ -8,9 +8,9 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/../ClassLoader.php";
-Swift_ClassLoader::load("Swift_Plugin_BandwidthMonitor");
-Swift_ClassLoader::load("Swift_Events_SendListener");
+
+
+
 
 /**
  * Throttler plugin for Swift Mailer.

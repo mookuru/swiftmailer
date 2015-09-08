@@ -8,8 +8,8 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/ClassLoader.php";
-Swift_ClassLoader::load("Swift_Log_DefaultLog");
+
+
 
 /**
  * A registry holding the current instance of the log.

@@ -110,7 +110,7 @@ class Swift_Authenticator_PopB4Smtp_Pop3Connection
   {
     if (substr($line, 0, 3) != "+OK")
     {
-      Swift_ClassLoader::load("Swift_ConnectionException");
+
       throw new Swift_ConnectionException("The POP3 server did not suitably respond with a +OK response. " .
       "[" . $line . "]");
     }
@@ -126,7 +126,7 @@ class Swift_Authenticator_PopB4Smtp_Pop3Connection
     
     if ((false === $this->handle = fsockopen($url, $this->getPort(), $errno, $errstr, $timeout)))
     {
-      Swift_ClassLoader::load("Swift_ConnectionException");
+
       throw new Swift_ConnectionException("The POP3 connection failed to start.  The error string returned from fsockopen() is [" . $errstr . "] #" . $errno);
     }
   }
@@ -140,7 +140,7 @@ class Swift_Authenticator_PopB4Smtp_Pop3Connection
     {
       if (false === fclose($this->handle))
       {
-        Swift_ClassLoader::load("Swift_ConnectionException");
+
         throw new Swift_ConnectionException("The POP3 connection did not close successfully.");
       }
     }
@@ -155,7 +155,7 @@ class Swift_Authenticator_PopB4Smtp_Pop3Connection
   {
     if (false === $response = fgets($this->handle))
     {
-      Swift_ClassLoader::load("Swift_ConnectionException");
+
       throw new Swift_ConnectionException("Data could not be read from the POP3 connection.");
     }
     return trim($response);
@@ -169,7 +169,7 @@ class Swift_Authenticator_PopB4Smtp_Pop3Connection
   {
     if (false !== fwrite($this->handle, $command . "\r\n"))
     {
-      Swift_ClassLoader::load("Swift_ConnectionException");
+
       throw new Swift_ConnectionException("Data could not be written to the POP3 connection.");
     }
   }

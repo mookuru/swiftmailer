@@ -8,8 +8,8 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/../ClassLoader.php";
-Swift_ClassLoader::load("Swift_Cache");
+
+
 
 /**
  * Caches data in files on disk - this is the best approach if possible
@@ -59,7 +59,7 @@ class Swift_Cache_Disk extends Swift_Cache
     $handle = fopen(self::$save_path . "/" . $this->prefix . $key, "ab");
     if (false === fwrite($handle, $data))
     {
-      Swift_ClassLoader::load("Swift_FileException");
+
       throw new Swift_FileException("Disk Caching failed.  Tried to write to file at [" .
         self::$save_path . "/" . $this->prefix . $key . "] but failed.  Check the permissions, or don't use disk caching.");
     }

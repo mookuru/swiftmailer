@@ -10,17 +10,17 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/Swift/ClassLoader.php";
-Swift_ClassLoader::load("Swift_LogContainer");
-Swift_ClassLoader::load("Swift_ConnectionBase");
-Swift_ClassLoader::load("Swift_BadResponseException");
-Swift_ClassLoader::load("Swift_Cache");
-Swift_ClassLoader::load("Swift_CacheFactory");
-Swift_ClassLoader::load("Swift_Message");
-Swift_ClassLoader::load("Swift_RecipientList");
-Swift_ClassLoader::load("Swift_BatchMailer");
-Swift_ClassLoader::load("Swift_Events");
-Swift_ClassLoader::load("Swift_Events_Listener");
+
+
+
+
+
+
+
+
+
+
+
 
 /**
  * Swift is the central component in the Swift library.
@@ -106,7 +106,7 @@ class Swift
    */
   protected function initializeEventListenerContainer()
   {
-    Swift_ClassLoader::load("Swift_Events_ListenerMapper");
+
     foreach (Swift_Events_ListenerMapper::getMap() as $interface => $method)
     {
       if (!isset($this->listeners[$interface]))
@@ -162,7 +162,7 @@ class Swift
    */
   public function notifyListeners($e, $type)
   {
-    Swift_ClassLoader::load("Swift_Events_ListenerMapper");
+
     if (!empty($this->listeners[$type]) && $notifyMethod = Swift_Events_ListenerMapper::getNotifyMethod($type))
     {
       $e->setSwift($this);
@@ -219,7 +219,7 @@ class Swift
     {
       $this->handshake($greeting);
     }
-    Swift_ClassLoader::load("Swift_Events_ConnectEvent");
+
     $this->notifyListeners(new Swift_Events_ConnectEvent($this->connection), "ConnectListener");
   }
   /**
@@ -230,7 +230,7 @@ class Swift
   {
     $this->command("QUIT");
     $this->connection->stop();
-    Swift_ClassLoader::load("Swift_Events_DisconnectEvent");
+
     $this->notifyListeners(new Swift_Events_DisconnectEvent($this->connection), "DisconnectListener");
   }
   /**
@@ -288,7 +288,7 @@ class Swift
   public function command($command, $code=null)
   {
     $log = Swift_LogContainer::getLog();
-    Swift_ClassLoader::load("Swift_Events_CommandEvent");
+
     if ($command !== "")
     {
       $command_event = new Swift_Events_CommandEvent($command, $code);
@@ -302,7 +302,7 @@ class Swift
     
     if ($code == -1) return null;
     
-    Swift_ClassLoader::load("Swift_Events_ResponseEvent");
+
     $response_event = new Swift_Events_ResponseEvent($this->connection->read());
     $this->notifyListeners($response_event, "ResponseListener");
     if ($log->hasLevel(Swift_Log::LOG_NETWORK)) $log->add($response_event->getString(), Swift_Log::RESPONSE);
@@ -328,7 +328,7 @@ class Swift
    */
   public function send(Swift_Message $message, $recipients, $from)
   {
-    Swift_ClassLoader::load("Swift_Message_Encoder");
+
     if (is_string($recipients) && preg_match("/^" . Swift_Message_Encoder::CHEAP_ADDRESS_RE . "\$/", $recipients))
     {
       $recipients = new Swift_Address($recipients);
@@ -359,7 +359,7 @@ class Swift
       $list->addTo($recipients);
     }
     
-    Swift_ClassLoader::load("Swift_Events_SendEvent");
+
     $send_event = new Swift_Events_SendEvent($message, $list, $from, 0);
     
     $this->notifyListeners($send_event, "BeforeSendListener");

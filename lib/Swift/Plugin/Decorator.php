@@ -9,9 +9,9 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/../ClassLoader.php";
-Swift_ClassLoader::load("Swift_Events_BeforeSendListener");
-Swift_ClassLoader::load("Swift_Plugin_Decorator_Replacements");
+
+
+
 
 /**
  * Swift Decorator Plugin.

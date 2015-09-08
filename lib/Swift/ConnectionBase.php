@@ -9,10 +9,10 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/ClassLoader.php";
-Swift_ClassLoader::load("Swift_LogContainer");
-Swift_ClassLoader::load("Swift_Connection");
-Swift_ClassLoader::load("Swift_ConnectionException");
+
+
+
+
 
 /**
  * Swift Connection Base Class

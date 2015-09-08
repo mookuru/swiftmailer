@@ -9,9 +9,9 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/../ClassLoader.php";
-Swift_ClassLoader::load("Swift_File");
-Swift_ClassLoader::load("Swift_Message_MimeException");
+
+
+
 
 /**
  * Mime is the underbelly for Messages, Attachments, Parts, Embedded Images, Forwarded Mail, etc
@@ -104,9 +104,9 @@ abstract class Swift_Message_Mime
    */
   public function __construct()
   {
-    Swift_ClassLoader::load("Swift_Message_Headers");
+
     $this->setHeaders(new Swift_Message_Headers());
-    Swift_ClassLoader::load("Swift_CacheFactory");
+
     $this->cache = Swift_CacheFactory::getCache();
   }
   /**
@@ -220,7 +220,7 @@ abstract class Swift_Message_Mime
     }
     
     $data = $this->getData();
-    Swift_ClassLoader::load("Swift_Message_Encoder");
+
     if ($non_ascii && is_string($data) && strlen($data) > 0 && !Swift_Message_Encoder::instance()->is7BitAscii($data))
     {
       $this->headers->set("Content-Transfer-Encoding", $encoding);
@@ -278,8 +278,8 @@ abstract class Swift_Message_Mime
    */
   public function buildData()
   {
-    Swift_ClassLoader::load("Swift_Message_Encoder");
-    Swift_ClassLoader::load("Swift_Cache_JointOutputStream");
+
+
     if (!empty($this->children)) //If we've got some mime parts we need to stick them onto the end of the message
     {
       if ($this->boundary === null) $this->boundary = self::generateBoundary();

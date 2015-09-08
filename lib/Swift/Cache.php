@@ -8,7 +8,7 @@
  * @license GNU Lesser General Public License
  */
  
-require_once dirname(__FILE__) . "/ClassLoader.php";
+
 
 /**
  * The interface for any cache mechanisms to follow
@@ -48,7 +48,7 @@ abstract class Swift_Cache
    */
   public function getOutputStream($key)
   {
-    Swift_ClassLoader::load("Swift_Cache_OutputStream");
+
     $os = new Swift_Cache_OutputStream($this, $key);
     return $os;
   }

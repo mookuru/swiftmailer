@@ -9,9 +9,9 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/ClassLoader.php";
-Swift_ClassLoader::load("Swift_Address");
-Swift_ClassLoader::load("Swift_Iterator_Array");
+
+
+
 
 /**
  * Swift's Recipient List container.  Contains To, Cc, Bcc

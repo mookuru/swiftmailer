@@ -8,8 +8,8 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/../ClassLoader.php";
-Swift_ClassLoader::load("Swift_Cache_OutputStream");
+
+
 
 /**
  * Makes multiple output streams act as one super sream

@@ -8,7 +8,7 @@
  * @license GNU Lesser General Public License
  */
 
-require_once dirname(__FILE__) . "/ClassLoader.php";
+
 
 /**
  * Makes instances of the cache the user has defined

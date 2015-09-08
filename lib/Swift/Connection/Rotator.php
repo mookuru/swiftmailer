@@ -8,8 +8,8 @@
  * @license GNU Lesser General Public License
  */
  
-require_once dirname(__FILE__) . "/../ClassLoader.php";
-Swift_ClassLoader::load("Swift_ConnectionBase");
+
+
 
 /**
  * Swift Rotator Connection
@@ -166,7 +166,7 @@ class Swift_Connection_Rotator extends Swift_ConnectionBase
    */
   public function postConnect(Swift $instance)
   {
-    Swift_ClassLoader::load("Swift_Plugin_ConnectionRotator");
+
     if (!$instance->getPlugin("_ROTATOR")) $instance->attachPlugin(new Swift_Plugin_ConnectionRotator(), "_ROTATOR");
     $this->connections[$this->active]->postConnect($instance);
   }
