@@ -7,10 +7,6 @@
  * @package Swift
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * Swift Array Iterator Interface
  * Iterates over a standard PHP array.

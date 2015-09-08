@@ -7,10 +7,6 @@
  * @package Swift_Cache
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * Caches data in variables - uses memory!
  * @package Swift_Cache

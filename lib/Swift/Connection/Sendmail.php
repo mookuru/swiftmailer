@@ -8,9 +8,6 @@
  * @license GNU Lesser General Public License
  */
  
-
-
-
 /**
  * Swift Sendmail Connection
  * @package Swift_Connection

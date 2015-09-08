@@ -8,11 +8,6 @@
  * @subpackage Decorator
  * @license GNU Lesser General Public License
  */
-
-
-
-
-
 /**
  * Swift Decorator Plugin.
  * Allows messages to be slightly different for each recipient.

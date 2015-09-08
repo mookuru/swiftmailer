@@ -7,10 +7,6 @@
  * @package Swift_Authenticator
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * Swift PLAIN Authenticator
  * This form of authentication is unbelievably insecure since everything is done plain-text

@@ -8,10 +8,6 @@
  * @package Swift_Connection
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * Swift Bad Response Exception
  * @package Swift_Connection

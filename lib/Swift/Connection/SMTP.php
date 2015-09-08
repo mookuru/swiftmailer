@@ -7,11 +7,6 @@
  * @package Swift_Connection
  * @license GNU Lesser General Public License
  */
-
-
-
-
-
 /**
  * Swift SMTP Connection
  * @package Swift_Connection

@@ -7,10 +7,6 @@
  * @package Swift_Authenticator
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * Swift CRAM-MD5 Authenticator
  * This form of authentication is a secure challenge-response method

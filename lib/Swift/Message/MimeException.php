@@ -8,10 +8,6 @@
  * @package Swift_Message
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * Swift MIME Exception
  * @package Swift_Message

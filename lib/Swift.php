@@ -9,19 +9,6 @@
  * @version 3.3.2
  * @license GNU Lesser General Public License
  */
-
-
-
-
-
-
-
-
-
-
-
-
-
 /**
  * Swift is the central component in the Swift library.
  * @package Swift

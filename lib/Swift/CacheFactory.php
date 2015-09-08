@@ -7,9 +7,6 @@
  * @package Swift_Cache
  * @license GNU Lesser General Public License
  */
-
-
-
 /**
  * Makes instances of the cache the user has defined
  * @package Swift_Cache

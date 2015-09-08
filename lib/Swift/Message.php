@@ -10,14 +10,6 @@
  * @package Swift_Message
  * @license GNU Lesser General Public License
  */
-
-
-
-
-
-
-
-
 /**
  * Swift Message class
  * @package Swift_Message

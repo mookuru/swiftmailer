@@ -7,11 +7,6 @@
  * @package Swift_Plugin
  * @license GNU Lesser General Public License
  */
-
-
-
-
-
 /**
  * Throttler plugin for Swift Mailer.
  * Restricts the speed at which Swift will operate.

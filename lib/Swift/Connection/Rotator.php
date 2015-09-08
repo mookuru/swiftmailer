@@ -8,9 +8,6 @@
  * @license GNU Lesser General Public License
  */
  
-
-
-
 /**
  * Swift Rotator Connection
  * Switches through each connection in turn after sending each message

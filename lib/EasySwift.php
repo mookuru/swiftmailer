@@ -8,12 +8,6 @@
  * @version 1.0.3
  * @license GNU Lesser General Public License
  */
-
-
-
-
-
-
 //Some constants for backwards compatibility with v2 code
 if (!defined("SWIFT_TLS")) define("SWIFT_TLS", Swift_Connection_SMTP::ENC_TLS);
 if (!defined("SWIFT_SSL")) define("SWIFT_SSL", Swift_Connection_SMTP::ENC_SSL);

@@ -8,8 +8,6 @@
  * @license GNU Lesser General Public License
  */
  
-
-
 /**
  * The interface for any cache mechanisms to follow
  * @package Swift_Cache

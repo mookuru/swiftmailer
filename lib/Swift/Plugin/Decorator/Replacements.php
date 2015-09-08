@@ -8,8 +8,6 @@
  * @subpackage Decorator
  * @license GNU Lesser General Public License
  */
-
-
 /**
  * Swift Decorator Plugin Replacements.
  * Provides and manages the list of replacements for the decorator plugin.

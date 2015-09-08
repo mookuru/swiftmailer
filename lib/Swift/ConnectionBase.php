@@ -8,12 +8,6 @@
  * @package Swift_Connection
  * @license GNU Lesser General Public License
  */
-
-
-
-
-
-
 /**
  * Swift Connection Base Class
  * @package Swift_Connection

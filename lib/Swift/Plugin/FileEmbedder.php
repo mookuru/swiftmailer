@@ -8,10 +8,6 @@
  * @author Chris Corbyn <chris@w3style.co.uk>
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * Swift FileEmbedder Plugin to embed remote files.
  * Scans a Swift_Message instance for remote files and then embeds them before sending.

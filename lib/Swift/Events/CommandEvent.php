@@ -8,8 +8,6 @@
  * @package Swift_Events
  * @license GNU Lesser General Public License
  */
-
-
 /**
  * Generated when Swift is sending a command
  * @package Swift_Events

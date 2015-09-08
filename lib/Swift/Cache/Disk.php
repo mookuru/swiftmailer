@@ -7,10 +7,6 @@
  * @package Swift_Cache
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * Caches data in files on disk - this is the best approach if possible
  * @package Swift_Cache

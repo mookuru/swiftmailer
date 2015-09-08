@@ -8,10 +8,6 @@
  * @package Swift
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * Swift_Address is just a lone e-mail address reprsented as an object
  * @package Swift

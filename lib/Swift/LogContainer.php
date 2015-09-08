@@ -7,10 +7,6 @@
  * @package Swift_Log
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * A registry holding the current instance of the log.
  * @package Swift_Log

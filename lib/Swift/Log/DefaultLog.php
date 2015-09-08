@@ -8,10 +8,6 @@
  * @package Swift_Log
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * The Default Logger class
  * @package Swift_Log

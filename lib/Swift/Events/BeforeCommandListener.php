@@ -8,8 +8,6 @@
  * @package Swift_Events
  * @license GNU Lesser General Public License
  */
-
-
 /**
  * Contains the list of methods a plugin requiring the use of a CommandEvent, before it is sent must implement
  * @package Swift_Events

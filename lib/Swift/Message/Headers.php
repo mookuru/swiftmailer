@@ -8,9 +8,6 @@
  * @package Swift_Message
  * @license GNU Lesser General Public License
  */
-
-
-
 /**
  * Contains and constructs the headers for a MIME document
  * @package Swift_Message

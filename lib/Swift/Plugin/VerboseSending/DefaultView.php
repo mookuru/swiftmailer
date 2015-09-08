@@ -10,8 +10,6 @@
  */
 
 require_once dirname(__FILE__) . "/../../ClassLoader.php";
-
-
 /**
  * The Default View for the Verbose Sending Plugin
  * @package Swift_Plugin

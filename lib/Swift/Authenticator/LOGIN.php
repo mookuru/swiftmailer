@@ -7,10 +7,6 @@
  * @package Swift_Authenticator
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * Swift LOGIN Authenticator
  * @package Swift_Authenticator

@@ -8,8 +8,6 @@
  * @package Swift_Events
  * @license GNU Lesser General Public License
  */
-
-
 /**
  * Generated every time Swift disconnects from a MTA
  * @package Swift_Events

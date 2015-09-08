@@ -8,11 +8,6 @@
  * @package Swift_Message
  * @license GNU Lesser General Public License
  */
-
-
-
-
-
 /**
  * Mime is the underbelly for Messages, Attachments, Parts, Embedded Images, Forwarded Mail, etc
  * In fact, every single component of the composed email is simply a new Mime document nested inside another
@@ -278,8 +273,6 @@ abstract class Swift_Message_Mime
    */
   public function buildData()
   {
-
-
     if (!empty($this->children)) //If we've got some mime parts we need to stick them onto the end of the message
     {
       if ($this->boundary === null) $this->boundary = self::generateBoundary();

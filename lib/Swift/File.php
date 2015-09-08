@@ -8,10 +8,6 @@
  * @package Swift
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * Swift File stream abstraction layer
  * Reads bytes from a file

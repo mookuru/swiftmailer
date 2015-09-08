@@ -7,11 +7,6 @@
  * @package Swift_Plugin
  * @license GNU Lesser General Public License
  */
-
-
-
-
-
 /**
  * Swift Bandwidth Monitor.
  * Tracks bytes in and out of the connection.

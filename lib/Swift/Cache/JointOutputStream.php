@@ -7,10 +7,6 @@
  * @package Swift_Cache
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * Makes multiple output streams act as one super sream
  * @package Swift_Cache

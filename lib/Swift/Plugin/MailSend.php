@@ -7,11 +7,6 @@
  * @package Swift_Connection
  * @license GNU Lesser General Public License
  */
-
-
-
-
-
 /**
  * Swift mail() send plugin
  * Sends the message using mail() when a SendEvent is fired.  Using the NativeMail connection provides stub responses to allow this to happen cleanly.

@@ -7,11 +7,6 @@
  * @package Swift_Connection
  * @license GNU Lesser General Public License
  */
-
-
-
-
-
 /**
  * Swift mail() Connection
  * NOTE: This class is nothing more than a stub.  The MailSend plugin does the actual sending.

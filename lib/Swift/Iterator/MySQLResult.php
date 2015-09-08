@@ -7,10 +7,6 @@
  * @package Swift
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * Swift Mailer MySQL Resultset Iterator.
  * Iterates over MySQL Resultset from mysql_query().

@@ -8,9 +8,6 @@
  * @license GNU Lesser General Public License
  */
  
-
-
-
 /**
  * Swift Multi Connection
  * Tries to connect to a number of connections until one works successfully

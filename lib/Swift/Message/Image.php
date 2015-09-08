@@ -8,10 +8,6 @@
  * @package Swift_Message
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * Embedded Image component for Swift Mailer
  * @package Swift_Message

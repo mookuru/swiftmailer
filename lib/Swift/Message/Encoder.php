@@ -8,10 +8,6 @@
  * @package Swift_Message
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * Encodes strings in a variety of formats and detects some encoding formats
  * @package Swift_Message

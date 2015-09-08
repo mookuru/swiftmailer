@@ -7,10 +7,6 @@
  * @package Swift_Log
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * The Logger Interface
  * @package Swift_Log

@@ -8,10 +8,6 @@
  * @package EasySwift
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * EasySwift, Swift Response Tracker.
  * Updates properties in EasySwift when a response is received by Swift.

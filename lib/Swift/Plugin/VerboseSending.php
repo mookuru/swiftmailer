@@ -8,11 +8,6 @@
  * @subpackage VerboseSending
  * @license GNU Lesser General Public License
  */
-
-
-
-
-
 /**
  * Verbose Sending plugin for Swift Mailer.
  * Displays "pass" or "fail" messages in realtime as the messages are sent.

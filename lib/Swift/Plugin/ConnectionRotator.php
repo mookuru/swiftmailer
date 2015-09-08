@@ -7,11 +7,6 @@
  * @package Swift_Plugin
  * @license GNU Lesser General Public License
  */
-
-
-
-
-
 /**
  * Swift Rotating Connection Controller
  * Invokes the nextConnection() method of Swift_Connection_Rotator upon sending a given number of messages

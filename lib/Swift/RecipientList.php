@@ -8,11 +8,6 @@
  * @package Swift
  * @license GNU Lesser General Public License
  */
-
-
-
-
-
 /**
  * Swift's Recipient List container.  Contains To, Cc, Bcc
  * @package Swift

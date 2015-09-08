@@ -7,10 +7,6 @@
  * @package Swift_Plugin
  * @license GNU Lesser General Public License
  */
-
-
-
-
 /**
  * Swift AntiFlood controller.
  * Closes a connection and pauses for X seconds after a number of emails have been sent.

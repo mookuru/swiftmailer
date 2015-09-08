@@ -7,11 +7,6 @@
  * @package Swift_Authenticator
  * @license GNU Lesser General Public License
  */
-
-
-
-
-
 /**
  * Swift PopB4Smtp Authenticator
  * This form of authentication requires a quick connection to be made with a POP3 server before finally connecting to SMTP

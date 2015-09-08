@@ -8,8 +8,6 @@
  * @package Swift_Message
  * @license GNU Lesser General Public License
  */
-
-
 /**
  * Attachment component for Swift Mailer
  * @package Swift_Message
