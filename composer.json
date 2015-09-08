@@ -1,0 +1,12 @@
+{
+    "name": "mookuru/swiftmailer",
+    "type": "library",
+    "require": {
+        "php": ">=5"
+    },
+    "autoload": {
+        "psr-0": {
+            "Swift": "lib/"
+        }
+    }
+}
